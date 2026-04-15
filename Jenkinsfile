@@ -40,5 +40,10 @@ pipeline {
                 bat "curl http://localhost:5000"
             }
         }
+        stage('Test Docker') {
+            steps {
+                bat 'docker ps'
+            }
+        }
     }
 }
